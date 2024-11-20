@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet Médical</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+
+
+
+
+        .background-container {
+    background-image: url('oip.jpg'); 
+    background-size: cover;
+    background-position: center 20%; 
+    height: 60vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #21618C;
+    text-align: center;
+} 
+
+        
+        .descriptive-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s; 
+            cursor: pointer; 
+        }
+
+        .descriptive-container:hover {
+            transform: scale(1.05) translate(5px, -5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .descriptive-container h1 {
+            color: #333;
+        }
+
+        .descriptive-container p, .descriptive-container li {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .descriptive-container hr {
+            border-color: #ddd;
+        }
+        .descriptive-container:hover {
+        transform: scale(1.05) translate(5px, -5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    </style>
+</head>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Cabinet Médical</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+    </nav>
+  
+    <div class="background-container">
+        <div class="ligne-horizontal"></div>
+    </div>
+    <br>
+
+    <hr style="color: #000000; ">
+    <br>
+    
+ <div class="container mt-5">
+            <div class="descriptive-container">
+                <h2 class="text-lg font-semibold mb-4">À propos du cabinet médical</h2>
+                <p class="mb-2">Situé au cœur de notre communauté, le cabinet médical offre des services de santé de haute qualité depuis plus de six d'années. Notre équipe dévouée de professionnels de la santé s'engage à fournir des soins attentionnés et personnalisés à tous nos patients.</p>
+                <p class="mb-2">Que vous ayez besoin d'une consultation générale, de soins spécialisés ou de conseils sur la gestion de votre santé, nous sommes là pour vous. Notre objectif est de promouvoir le bien-être et la santé à long terme de chacun de nos patients, en leur offrant des services médicaux complets et accessibles.</p>
+                <p>Nous croyons en une approche holistique de la santé, en prenant en compte non seulement les aspects physiques, mais aussi émotionnels et sociaux de chaque individu. En tant que votre partenaire de soins de santé, nous sommes là pour vous soutenir à chaque étape de votre parcours vers une vie plus saine et plus heureuse.</p>
+            
+            <p class="mb-4">Pour prendre un rendez-vous, veuillez remplir le formulaire ci-dessous avec les informations requises :</p>
+            <hr>
+        
+            <ul class="mb-4">
+                <li><strong>Date :</strong> Sélectionnez la date souhaitée pour votre rendez-vous en utilisant le calendrier.</li>
+                <li><strong>Heure :</strong> Indiquez l'heure qui vous convient le mieux pour votre rendez-vous.</li>
+                <li><strong>Nom et Prénom :</strong> Entrez votre nom et prénom dans les champs prévus.</li>
+            </ul>
+        
+            <hr>
+            <p>Une fois que vous avez complété tous les champs, cliquez sur le bouton "Ajouter Rendez-vous" pour confirmer votre demande. Notre équipe vous contactera pour confirmer votre rendez-vous.</p>
+        </div>
+        <hr style="color: #000000; ">
+<br>
+        <div class="descriptive-container">
+            <h2 class="text-lg  mb-4">Contactez-nous</h2>
+            <p class="mb-2">Pour prendre rendez-vous ou pour toute question, n'hésitez pas à nous contacter :</p>
+            <ul class="mb-4">
+                <li><i class="fas fa-envelope mr-2"></i><a href="mailto:contact@cabinet-medical.com" class="text-blue-500">contact@cabinet-medical.com</a></li>
+                <li><i class="fas fa-phone mr-2"></i><a href="tel:+1234567890" class="text-blue-500">+1 (234) 567-890</a></li>
+            </ul>
+            <p>Notre équipe est disponible pour répondre à toutes vos questions et vous fournir l'assistance dont vous avez besoin.</p>
+            <hr> </br>
+            <div class="card" style="width: 18rem; ">
+                <img src="pi.jpg" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Dr. John Doe</h5>
+                    <p class="card-text">Médecin généraliste</p>
+                    <p class="card-text">Rue 60998 , Reine sud</p>
+            
+                    <a href="mailto:john.doe@cabinet-medical.com" class="btn btn-primary"><i class="far fa-envelope"></i> Contactez-moi</a>
+                </div>
+            </div>
+        </div>
+       
+        <form action="add_appointment.php" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <h1 style="text-align: center; color:black; margin-bottom: 20px; font-size: 24px; ">Formulaire de rendez-vous</h1>
+            <hr>
+        </br>
+            <div class="mb-4">
+                <label for="date" class="block text-gray-700 text-sm font-bold mb-2">Date:</label>
+                <input type="date" id="date" name="date" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-4">
+                <label for="time" class="block text-gray-700 text-sm font-bold mb-2">Heure:</label>
+                <input type="time" id="time" name="time" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="mb-6">
+                <label for="doctor" class="block text-gray-700 text-sm font-bold mb-2">Nom et Prénom</label>
+                <input type="text" id="nom" name="nom" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+           
+            <div class="flex items-center justify-between">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Ajouter Rendez-vous</button>
+            </div>
+        </form>
+        
+       
+
+    <div class="descriptive-container">
+        <h1 style="text-align: center; color:black; margin-bottom: 20px; font-size: 24px; ">Gérer les rendez-vous, les patients et d'autres tâches administratives.</h1>
+        <hr>
+    </br>
+        <button id="btnAfficherRendezVous" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-4">Afficher liste de rendez-vous</button>
+        <div id="rendezVousContainer" class="container mt-5">
+            <h2>Rendez-vous pris </h2>
+        </div>
+    </div>
+   
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btnAfficherRendezVous").click(function(){
+        $.ajax({
+            url: "recuperer_rendez_vous.php", 
+            type: "GET",
+            success: function(data){
+                $("#rendezVousContainer").html(data);
+                attachEventHandlers();
+            }
+        });
+    });
+
+    function attachEventHandlers() {
+        $("#rendezVousContainer").on("click", ".btn-edit", function(){
+            var rendezVousId = $(this).data("id");
+            window.location.href = "modifier_rendez_vous.php?id=" + rendezVousId;
+        });
+
+        $("#rendezVousContainer").on("click", ".btn-delete", function(){
+            var rendezVousId = $(this).data("id");
+            $.ajax({
+                url: "supprimer_rendez_vous.php", 
+                type: "POST",
+                data: { id: rendezVousId },
+                success: function(response){
+                }
+            });
+        });
+    }
+});
+</script>
+
+
+
+<footer class="footer bg-dark text-white text-center py-4">
+    <div class="container">
+        © Maher -2024 Cabinet Médical. Tous droits réservés.
+       
+    </div>
+</footer>
+
+
+    
+</body>
+</html>
